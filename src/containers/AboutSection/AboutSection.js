@@ -1,5 +1,6 @@
 // src/containers/AboutSection/AboutSection.js
 import React from 'react';
+import profilePhoto from '../../assets/images/outdoor-profile-photo.jpg'; // Import my profile photo
 
 const AboutSection = () => {
   return (
@@ -12,7 +13,11 @@ const AboutSection = () => {
         {/* Photo Placeholder */}
         <div className="mb-12">
           <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-100 to-blue-200 shadow-lg flex items-center justify-center border-4 border-white">
-            <div className="text-blue-600 text-6xl font-light">RW</div>
+            <img
+            src={profilePhoto} // Placeholder for profile photo
+            alt="Reuben Wong"
+            className="w-full h-full object-cover rounded-full"
+            />
           </div>
         </div>
         
