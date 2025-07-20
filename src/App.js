@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from './components/Navigation/Navigation';
 
 const App = () => {
   const scrollToSection = (sectionId) => {
@@ -9,27 +10,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
-        <div className="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
-          <div className="text-xl font-light text-blue-600">RW</div>
-          <div className="space-x-8">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
-            >
-              Home
-            </button>
-            <button 
-              onClick={() => scrollToSection('about')}
-              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
-            >
-              About
-            </button>
-          </div>
-        </div>
-      </nav>
-
+      <Navigation />
       {/* Home Section */}
       <section id="home" className="min-h-screen flex items-center justify-center px-8 bg-gradient-to-br from-blue-50 to-white">
         <div className="text-center max-w-4xl mx-auto">
@@ -69,10 +50,10 @@ const App = () => {
           {/* About Content */}
           <div className="mb-16">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-6">
-              I am currently a data scientist who loves storytelling, helping people understand difficult concepts, and forming new connections. I have a variety of experience from working with clinical patient data, member profile data, and digital activity data and enjoy figuring out ways we can utilize advanced analytics and statistics to deliver business value to companies.
+              I am currently a data scientist who enjoys digging for insights, helping people understand difficult concepts, and forming new connections. I have a variety of experience from working with clinical patient data, member profile data, and digital activity data and enjoy figuring out ways we can utilize advanced analytics and statistics to deliver business value to companies.
             </p>
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-              In my free time I love practicing mindfulness, dancing, finding good clothing deals, and spending time with people I love.
+              In my free time I love practicing mindfulness, dancing, thrifting, and spending time with people I love.
             </p>
           </div>
 
