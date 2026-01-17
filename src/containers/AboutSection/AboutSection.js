@@ -10,13 +10,13 @@ const AboutSection = () => {
           About Me
         </h2>
         
-        {/* Photo Placeholder */}
+        {/* Profile photo */}
         <div className="mb-12">
           <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-100 to-blue-200 shadow-lg flex items-center justify-center border-4 border-white">
             <img
-            src={profilePhoto} // Placeholder for profile photo
+            src={profilePhoto} // Profile photo
             alt="Reuben Wong"
-            className="w-full h-full object-cover rounded-full"
+            className="w-full h-full object-cover object-[50%_100%] rounded-full" // [adjusts where in photo] 
             />
           </div>
         </div>
@@ -24,10 +24,12 @@ const AboutSection = () => {
         {/* About Content */}
         <div className="mb-16">
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto mb-6">
-            I am currently a data scientist who enjoys digging for insights, helping people understand difficult concepts, and forming new connections. I have a variety of experience from working with clinical patient data, member profile data, and digital activity data and enjoy figuring out ways we can utilize advanced analytics and statistics to deliver business value to companies.
+            Hello! My name is Reuben Wong and I enjoy gathering meaningful insights from data and crafting compelling stories. 
+            My experience spans clinical patient data to digital user activity. 
+            My goal is to help organizations unlock business value hidden in their data. My toolkit includes strong statistics fundamentals, flexibility with messy data, and thoughtful communication.
           </p>
           <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            In my free time I love practicing mindfulness, dancing, thrifting, and spending time with people I love.
+            In my free time you can find me practicing mindfulness, dancing, hunting for good deals, and spending time with people I love.
           </p>
         </div>
 
